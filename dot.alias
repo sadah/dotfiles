@@ -1,0 +1,7 @@
+alias vi='vim'
+alias less='less -R'
+alias u='cd ../'
+alias uu='cd ../../'
+alias uuu='cd ../../../'
+alias p="pwd"
+
