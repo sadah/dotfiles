@@ -109,7 +109,8 @@ function chpwd() { ls -lh }
 
 source $HOME/.alias
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export RBENV_ROOT=/usr/local/var/rbenv
 export FDK_EXE=$HOME/Library/FDK/Tools/osx
 export PATH=$PATH:$HOME/.nodebrew/current/bin:$FDK_EXE
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
