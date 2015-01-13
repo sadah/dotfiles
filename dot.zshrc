@@ -114,3 +114,5 @@ export FDK_EXE=$HOME/Library/FDK/Tools/osx
 export PATH=$PATH:$HOME/.nodebrew/current/bin:$FDK_EXE
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+source $HOME/.localrc
