@@ -104,15 +104,23 @@ setopt hist_verify
 # 補完候補リストの日本語を適正表示
 setopt print_eight_bit
 
+# no no match warning
+setopt nonomatch
+
 # cdの後に自動的にls -la
 function chpwd() { ls -lh }
+
+eval "$(hub alias -s)"
 
 source $HOME/.alias
 
 export RBENV_ROOT=/usr/local/var/rbenv
 export FDK_EXE=$HOME/Library/FDK/Tools/osx
-export PATH=$PATH:$HOME/.nodebrew/current/bin:$FDK_EXE
-
+export PATH=$PATH:$HOME/bin:$HOME/.nodebrew/current/bin:$FDK_EXE
+export PATH=$PATH:$HOME/git/prott-commands/bin
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 source $HOME/.localrc
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
