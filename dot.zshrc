@@ -116,6 +116,8 @@ source $HOME/.alias
 
 export RBENV_ROOT=/usr/local/var/rbenv
 export FDK_EXE=$HOME/Library/FDK/Tools/osx
+export GOPATH=$HOME/.go
+
 export PATH=$PATH:$HOME/bin:$HOME/.nodebrew/current/bin:$FDK_EXE
 export PATH=$PATH:$HOME/git/prott-commands/bin
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
