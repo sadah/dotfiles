@@ -6,3 +6,5 @@ ln -s ~/git/dotfiles/dot.tigrc ~/.tigrc
 ln -s ~/git/dotfiles/dot.tmux.conf ~/.tmux.conf
 ln -s ~/git/dotfiles/dot.vimrc ~/.vimrc
 ln -s ~/git/dotfiles/dot.zshrc ~/.zshrc
+ln -s ~/git/dotfiles/dot.gitconfig ~/.gitconfig
+ln -s ~/git/dotfiles/dot.gitignore ~/.gitignore
