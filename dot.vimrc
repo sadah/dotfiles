@@ -8,7 +8,7 @@ set autoindent
 set backupdir=$HOME/.vimbackup
 
 "ファイル保存ダイアログの初期ディレクトリをバッファファイル位置に設定
-set browsedir=buffer 
+set browsedir=buffer
 
 "スワップファイル用のディレクトリ
 set directory=$HOME/.vimbackup
@@ -61,24 +61,26 @@ set laststatus=2
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
+  NeoBundleFetch 'Shougo/neobundle.vim'
+  NeoBundle 'Shougo/neocomplcache'
+  NeoBundle 'Shougo/unite.vim'
+  NeoBundle 'Shougo/vimfiler'
+  NeoBundle 'thinca/vim-ref'
+  NeoBundle 'thinca/vim-quickrun'
+  NeoBundle 'vim-ruby/vim-ruby'
+  " Bundle "rails.vim"
+  NeoBundle 'tpope/vim-rails'
+  NeoBundle 'scrooloose/syntastic'
+  NeoBundle 'svn-diff.vim'
+  " Bundle 'minibufexpl.vim'
+  NeoBundle 'buftabs'
+  NeoBundle 'desert.vim'
+  NeoBundle 'Zenburn'
+  NeoBundle 'ZenCoding.vim'
+  call neobundle#end()
 endif
 
-NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/vimfiler'
-NeoBundle 'thinca/vim-ref'
-NeoBundle 'thinca/vim-quickrun'
-NeoBundle 'vim-ruby/vim-ruby'
-" Bundle "rails.vim"
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'svn-diff.vim'
-" Bundle 'minibufexpl.vim'
-NeoBundle 'buftabs'
-NeoBundle 'desert.vim'
-NeoBundle 'Zenburn'
-NeoBundle 'ZenCoding.vim'
 
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list = 1
