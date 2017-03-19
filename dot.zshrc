@@ -115,12 +115,9 @@ eval "$(hub alias -s)"
 source $HOME/.alias
 
 export RBENV_ROOT=/usr/local/var/rbenv
-export FDK_EXE=$HOME/Library/FDK/Tools/osx
-export GOPATH=$HOME/.go
-
-export PATH=$PATH:$HOME/bin:$HOME/.nodebrew/current/bin:$FDK_EXE
-export PATH=$PATH:$HOME/git/prott-commands/bin
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-### Added by the Heroku Toolbelt
+export FDK_EXE=$HOME/Library/FDK/Tools/osx
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/bin:$HOME/.nodebrew/current/bin:$FDK_EXE
 export PATH="/usr/local/heroku/bin:$PATH"
