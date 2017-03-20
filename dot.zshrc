@@ -118,6 +118,10 @@ export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export FDK_EXE=$HOME/Library/FDK/Tools/osx
-export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/bin:$HOME/.nodebrew/current/bin:$FDK_EXE
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export GOPATH=$HOME/git/go
+export PATH="$HOME/.gobrew/bin:$PATH"
+eval "$(gobrew init -)"
+
