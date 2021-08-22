@@ -5,4 +5,3 @@ alias uu='cd ../../'
 alias uuu='cd ../../../'
 alias p="pwd"
 alias tailf="tail -f"
-alias be="bundle exec"
