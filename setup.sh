@@ -21,6 +21,4 @@ which brew >/dev/null 2>&1 && brew update --verbose
 which brew >/dev/null 2>&1 && brew bundle --global --verbose
 
 # fish
-which fish >/dev/null 2>&1 || curl -L https://get.oh-my.fish | fish
-omf install https://github.com/jhillyerd/plugin-git
-omf install bobthefish
+which fish >/dev/null 2>&1 && fish fish.sh

@@ -9,3 +9,6 @@
 	editor = vim
 [push]
 	default = current
+[user]
+	name = sadah
+	email = sadaaki.hirai@gmail.com
