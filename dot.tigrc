@@ -1,5 +1,0 @@
-# vimの最終行への移動と似てるから無効化
-bind generic G none
- 
-# commit時にもdiffを出す
-bind status C !git commit -v

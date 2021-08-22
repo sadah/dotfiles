@@ -1,0 +1,14 @@
+[color]
+	ui = true
+	diff = auto
+	status = auto
+	branch = auto
+	grep = auto
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+[push]
+	default = current
+[user]
+	name = sadah
+	email = sadaaki.hirai@gmail.com
