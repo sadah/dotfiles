@@ -1,5 +1,5 @@
 # fish
-which fish >/dev/null 2>&1 && curl -L https://get.oh-my.fish | fish
+which fish >/dev/null 2>&1 && curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 fish -c "omf install https://github.com/jhillyerd/plugin-git"
 fish -c "omf install bobthefish"
 

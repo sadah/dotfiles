@@ -14,7 +14,7 @@ brew "git"
 brew "libgcrypt"
 brew "gnupg"
 brew "go"
-brew "graphviz"q
+brew "graphviz"
 brew "hugo"
 brew "libssh2"
 brew "mint"
