@@ -21,4 +21,4 @@ which brew >/dev/null 2>&1 && brew update --verbose
 which brew >/dev/null 2>&1 && brew bundle --global --verbose
 
 # fish
-which fish >/dev/null 2>&1 && fish fish.sh
+which fish >/dev/null 2>&1 && fish fish.fish

@@ -4,7 +4,13 @@ fish -c "omf install https://github.com/jhillyerd/plugin-git"
 fish -c "omf install bobthefish"
 
 set fish_path (which fish)
-echo "Add fish pach to /etc/shells"
-sudo sh -c "echo $fish_path >> /etc/shells"
+
+if grep -q "fish" /etc/shells
+    echo "Found fish in /etc/shells"
+else
+    echo "Add fish path to /etc/shells"
+    sudo sh -c "echo $fish_path >> /etc/shells"
+end
+
 echo "chsh -s $fish_path"
 chsh -s $fish_path
