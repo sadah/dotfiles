@@ -16,4 +16,6 @@ set -gx GOPATH $HOME/go
 set -gx PATH $PATH $GOPATH/bin
 
 # Internal Settings
-if [ -f './internal.fish' ]; fish ./internal.fish; end
+if test -f $HOME/.config/fish/internal.fish
+    source $HOME/.config/fish/internal.fish
+end
