@@ -19,3 +19,5 @@ set -gx PATH $PATH $GOPATH/bin
 if test -f $HOME/.config/fish/internal.fish
     source $HOME/.config/fish/internal.fish
 end
+
+starship init fish | source
