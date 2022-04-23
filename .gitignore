@@ -3,5 +3,6 @@
 *.env
 *.envrc
 *.vscode
+bin
 internal.fish
 fish_variables
