@@ -13,7 +13,10 @@ dotfiles_path=$(cd $(dirname $0) && pwd)
 if [ ! -d ~/.config ]; then
     mkdir  ~/.config
 fi
+
 ln -sfn ${dotfiles_path}/fish ~/.config/fish
+ln -sfn ${dotfiles_path}/zsh/.zshrc ~/.zshrc
+ln -sfn ${dotfiles_path}/zsh/.zshenv ~/.zshenv
 ln -sfn ${dotfiles_path}/.alias ~/.alias
 ln -sfn ${dotfiles_path}/.Brewfile ~/.Brewfile
 ln -sfn ${dotfiles_path}/.gitconfig ~/.gitconfig

@@ -4,5 +4,6 @@
 *.envrc
 *.vscode
 bin
-internal.fish
+internal.*
+.internal.*
 fish_variables
