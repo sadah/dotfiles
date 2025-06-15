@@ -102,12 +102,15 @@ source $ZSH/oh-my-zsh.sh
 
 source $HOME/.alias
 
-# Go
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$PATH
-
 # Internal Settings
 if [ -f $HOME/.internal.zsh ]; then source $HOME/.internal.zsh; fi
 
 eval "$(direnv hook zsh)"
 eval "$(starship init zsh)"
+
+# Go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
+
+# npm
+export PATH=$(npm root -g)/../bin:$PATH
